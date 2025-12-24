@@ -1,7 +1,4 @@
-"""from flask import Flask, render_template, request
-import joblib
-import pandas as pd
-from sklearn.metrics.pairwise import cosine_similarity"""
+
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
 import joblib, os, string
@@ -11,7 +8,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
-from googletrans import Translator   # for Marathi <-> English translation
+
 
 nltk.download('punkt')
 nltk.download('stopwords')
